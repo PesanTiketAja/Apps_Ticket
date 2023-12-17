@@ -1,6 +1,7 @@
-
-
-final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+// main.dart
+import 'package:flutter/material.dart';
+import 'package:apps_ticket/controller/ticket_controller.dart';
+import 'package:apps_ticket/view/ticket_form_page.dart';
 
 void main() {
   runApp(MyApp());
