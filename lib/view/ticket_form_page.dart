@@ -17,7 +17,7 @@ class _TicketBookingFormState extends State<TicketBookingForm> {
   final TextEditingController _eventDateController = TextEditingController();
   String _selectedTicketType = 'VIP';
   int _quantity = 2; // Default quantity
-  double _ticketPrice = 75.0;
+  double _ticketPrice = 1000000.0;
 
   final List<String> _ticketTypes = ['VIP', 'Regular', 'Student'];
 
@@ -96,13 +96,13 @@ class _TicketBookingFormState extends State<TicketBookingForm> {
     // Update ticket price based on selected ticket type
     switch (_selectedTicketType) {
       case 'VIP':
-        _ticketPrice = 75.0;
+        _ticketPrice = 1000000.0;
         break;
       case 'Regular':
-        _ticketPrice = 50.0;
+        _ticketPrice = 500000.0;
         break;
       case 'Student':
-        _ticketPrice = 25.0;
+        _ticketPrice = 250000.0;
         break;
     }
   }
