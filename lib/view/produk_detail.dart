@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kerkom_project/model/produk.dart';
-import 'package:kerkom_project/ui/produk_form.dart';
+import 'package:apps_ticket/model/produk.dart';
+import 'package:apps_ticket/view/produk_form.dart';
 
 class ProdukDetail extends StatefulWidget {
   Produk? produk;
@@ -33,7 +33,7 @@ class _ProdukDetailState extends State<ProdukDetail> {
               "Harga : Rp. ${widget.produk!.hargaProduk.toString()}",
               style: const TextStyle(fontSize: 18.0),
             ),
-             Text(
+            Text(
               "Keterangan : ${widget.produk!.keteranganProduk}",
               style: const TextStyle(fontSize: 18.0),
             ),

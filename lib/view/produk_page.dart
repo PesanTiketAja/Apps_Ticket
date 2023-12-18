@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kerkom_project/model/produk.dart';
-import 'package:kerkom_project/ui/produk_detail.dart';
-import 'package:kerkom_project/ui/produk_form.dart';
+import 'package:apps_ticket/model/produk.dart';
+import 'package:apps_ticket/view/produk_detail.dart';
+import 'package:apps_ticket/view/produk_form.dart';
 
 class ProdukPage extends StatefulWidget {
   const ProdukPage({Key? key}) : super(key: key);
@@ -15,7 +15,7 @@ class _ProdukPageState extends State<ProdukPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('List Tiket'),
+        title: const Text('List Produk'),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 20.0),

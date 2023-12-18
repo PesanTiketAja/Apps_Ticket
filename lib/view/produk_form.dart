@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kerkom_project/model/produk.dart';
+import 'package:apps_ticket/model/produk.dart';
 
 class ProdukForm extends StatefulWidget {
   final Produk? produk;
@@ -13,7 +13,7 @@ class ProdukForm extends StatefulWidget {
 class _ProdukFormState extends State<ProdukForm> {
   final _formKey = GlobalKey<FormState>();
   bool _isLoading = false;
-  String judul = "TAMBAH Tiket";
+  String judul = "TAMBAH PRODUK";
   String tombolSubmit = "SIMPAN";
 
   final _kodeProdukTextboxController = TextEditingController();
@@ -30,7 +30,7 @@ class _ProdukFormState extends State<ProdukForm> {
   void isUpdate() {
     if (widget.produk != null) {
       setState(() {
-        judul = "UBAH Tiket";
+        judul = "UBAH PRODUK";
         tombolSubmit = "UBAH";
         _kodeProdukTextboxController.text = widget.produk!.kodeProduk!;
         _namaProdukTextboxController.text = widget.produk!.namaProduk!;
@@ -39,7 +39,7 @@ class _ProdukFormState extends State<ProdukForm> {
         _keteranganProdukTextboxController.text = widget.produk!.namaProduk!;
       });
     } else {
-      judul = "TAMBAH Tiket";
+      judul = "TAMBAH PRODUK";
       tombolSubmit = "SIMPAN";
     }
   }
